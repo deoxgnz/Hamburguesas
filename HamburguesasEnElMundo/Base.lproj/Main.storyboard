@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HamburguesasEnElMundo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesas en el Mundo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBU-E6-mcb">
+                                <rect key="frame" x="48" y="20" width="225" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pf3-J0-G9E">
+                                <rect key="frame" x="67" y="410" width="220" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Quiero una hamburguesa!"/>
+                                <connections>
+                                    <action selector="quieroHamburguesa" destination="BYZ-38-t0r" eventType="touchUpInside" id="UVS-wC-vy3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hamburguesa:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdB-el-mxF">
+                                <rect key="frame" x="20" y="151" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hawaiana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpn-zT-P85">
+                                <rect key="frame" x="159" y="151" width="145" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="País:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uG-Oz-psA">
+                                <rect key="frame" x="20" y="266" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="México" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JkS-mL-XT0">
+                                <rect key="frame" x="106" y="266" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JkS-mL-XT0" secondAttribute="bottom" constant="281" id="7ZG-sr-cfq"/>
+                            <constraint firstItem="ZdB-el-mxF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="131" id="CVd-k0-p4W"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gpn-zT-P85" secondAttribute="trailing" id="Ff3-4l-kTB"/>
+                            <constraint firstItem="gpn-zT-P85" firstAttribute="leading" secondItem="ZdB-el-mxF" secondAttribute="trailing" constant="21" id="Gg7-Qh-TAf"/>
+                            <constraint firstItem="JkS-mL-XT0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="246" id="JdC-Go-Zvm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gpn-zT-P85" secondAttribute="trailing" id="LyZ-gg-rIX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5uG-Oz-psA" secondAttribute="trailing" constant="238" id="Ngv-px-JV9"/>
+                            <constraint firstItem="5uG-Oz-psA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="246" id="PnG-Ku-dSK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gpn-zT-P85" secondAttribute="bottom" constant="396" id="Z4x-DF-cWE"/>
+                            <constraint firstItem="pf3-J0-G9E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="ZPX-2B-ZIW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZdB-el-mxF" secondAttribute="bottom" constant="396" id="cqc-kj-JiZ"/>
+                            <constraint firstItem="gBU-E6-mcb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dkl-AS-Z4O"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ZdB-el-mxF" secondAttribute="leading" id="hZ8-8I-94j"/>
+                            <constraint firstItem="gBU-E6-mcb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="jfy-vX-hBE"/>
+                            <constraint firstItem="gpn-zT-P85" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="131" id="nh6-vN-cWd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gBU-E6-mcb" secondAttribute="trailing" constant="31" id="opg-XC-gxJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JkS-mL-XT0" secondAttribute="trailing" constant="52" id="p7l-xp-tPE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pf3-J0-G9E" secondAttribute="bottom" constant="128" id="qiX-m3-ufk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZdB-el-mxF" secondAttribute="trailing" constant="166" id="qvC-Tz-4oZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5uG-Oz-psA" secondAttribute="bottom" constant="281" id="tFF-nx-hBX"/>
+                            <constraint firstItem="JkS-mL-XT0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="86" id="w6S-sH-xwC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pf3-J0-G9E" secondAttribute="trailing" constant="17" id="yEf-gn-vAe"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="5uG-Oz-psA" secondAttribute="leading" id="ysS-8k-PbN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hamburguesa" destination="gpn-zT-P85" id="R58-WF-tWx"/>
+                        <outlet property="pais" destination="JkS-mL-XT0" id="49x-Bu-ZoK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318" y="529"/>
+        </scene>
+    </scenes>
+</document>
